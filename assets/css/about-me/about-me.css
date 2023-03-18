@@ -1,0 +1,12 @@
+.about-me {
+  padding: 10px;
+}
+
+.about-me>h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-me>p {
+  font-size: 15px;
+}

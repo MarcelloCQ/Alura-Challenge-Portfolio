@@ -1,0 +1,22 @@
+@import url('../../fonts/VISION\ -\ FREE/Vision-LightItalic.otf');
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  font-family: 'Vision-Light', 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 360px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 1440px) {
+  
+}

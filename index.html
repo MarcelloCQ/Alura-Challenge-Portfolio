@@ -2,33 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./assets/img/window-icon/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style/reset.css" />
-  <link rel="stylesheet" href="./style/normalize.css" />
-  <link rel="stylesheet" href="./style/style.css" />
+  <title>Hello World!</title>
+  <script src="./node_modules/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body class="body">
   <main>
     <header class="header">
+      <h1 class="header__name">Marcello Crescimbeni</h1>
+      <h1 class="header__mail"><i data-feather="mail"></i>giosuemc@gmail.com</h1>
     </header>
-    <section class="titulo">
+    <section class="title">
+      <img class="title__profile-photo" src="./assets/img/profile-photo/1517532357696.jpg" alt="Foto de Perfil">
+      <p>Hola, mi nombre es Marcello Crescimbeni, desarrollador frontEnd</p>
+      <p>Me especializo en el desarrollo de aplicaciones web</p>
     </section>
     <section class="menu">
+      <div class="menu__anchor__container">
+        <i data-feather="github"></i>
+        <a class="menu__anchor" href="https://github.com/MarcelloCQ" target="_blank" >GitHub</a>
+      </div>
+      <div class="menu__anchor__container">
+        <i data-feather="linkedin"></i>
+        <a class="menu__anchor" href="https://www.linkedin.com/in/giosue-marcello-crescimbeni-queija-54a858112/" target="_blank" >LinkedIn</a>
+      </div>
+      <div class="menu__anchor__container">
+        <i data-feather="link"></i>
+        <a class="menu__anchor" href="https://drive.google.com/file/d/1v1uF8j-9XG9C-ElOGZnAVk5zTi45XBxZ/view?usp=share_link" target="_blank" >Curriculum</a>
+      </div>
     </section>
     <section class="about-me">
+      <h1>Sobre mi</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, harum. Aspernatur fugiat architecto dignissimos molestias facilis illum neque? Quasi accusamus placeat beatae id enim praesentium similique quo aperiam iste neque!</p>
     </section>
     <section class="hobbies-and-softskills">
+      <h1 class="hobbies-and-softskills__title">Skills</h1>
+      <div class="hobbies-and-softskills__container">
+        <div class="hobbies-and-softskills__skills">JavaScript</div>
+        <div class="hobbies-and-softskills__skills">NodeJS</div>
+        <div class="hobbies-and-softskills__skills">React</div>
+        <div class="hobbies-and-softskills__skills">Redux</div>
+        <div class="hobbies-and-softskills__skills">Jest</div>
+        <div class="hobbies-and-softskills__skills">CSS</div>
+      </div>
+      <h1 class="hobbies-and-softskills__title">Hobbies</h1>
+      <div class="hobbies-and-softskills__container">
+        <div class="hobbies-and-softskills__hobbies">Tocar guitarra</div>
+        <div class="hobbies-and-softskills__hobbies">Ver anime</div>
+        <div class="hobbies-and-softskills__hobbies">Cantar</div>
+        <div class="hobbies-and-softskills__hobbies">Leer</div>
+        <div class="hobbies-and-softskills__hobbies">Nadar</div>
+        <div class="hobbies-and-softskills__hobbies">Salir a correr</div>
+      </div>
     </section>
     <section class="studies">
+      <h1 class="studies__title">Formación académica</h1>
+      <div class="studies__container">
+        <img class="studies__instituto-photo" src="./assets/img/estudios/instituto-superior-tecnologico-argentino.png" alt="instituto-superior-tecnologico-argentino" />
+        <p class="studies__career">Computación e Informática</p>
+        <p class="studies__instituto">2022 - Instituto Nacional Superior Tecnológico Argentina</p>
+      </div>
+      <div class="studies__container">
+        <img class="studies__instituto-photo" src="./assets/img/estudios/alura.png" alt="Alura Latam" />
+        <p class="studies__career">frontEnd Developer</p>
+        <p class="studies__instituto">2022 - Alura Latam - Oracle</p>
+      </div>
     </section>
     <section class="experiencie">
+      Pendiente insertar proyectos del reto alura
     </section>
     <section class="form-contact">
+      <h1>Contacto</h1>
+      <p>¿Quieres contactarme?
+Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
+      <form class="form-contact__container">
+        <div class="form-contact__minicontainer">
+          <label for="#nombre">Nombre</label>
+          <input class="form-control__input" id="nombre" type="text" />
+        </div>
+        <div class="form-contact__minicontainer">
+          <label for="#email">Email</label>
+          <input class="form-control__input" id="email" type="email" />
+        </div>
+        <div class="form-contact__minicontainer">
+          <label for="#asunto">Asunto</label>
+          <input class="form-control__input" id="asunto" type="text" />
+        </div>
+        <div class="form-contact__minicontainer">
+          <label for="#mensaje">Mensaje</label>
+          <textarea class="form-control__input textarea" id="mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+      </form>
     </section>
   </main>
   <footer class="rodapie">
+    <p>Desarrollado por Marcello Crescimbeni</p>
+    <p>2023</p>
   </footer>
+  <script>
+    feather.replace()
+  </script>
 </body>
 </html>

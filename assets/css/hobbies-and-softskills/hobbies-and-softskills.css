@@ -1,0 +1,30 @@
+.hobbies-and-softskills {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.hobbies-and-softskills__title {
+  width: 100%;
+  text-align: center;
+}
+
+.hobbies-and-softskills__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.hobbies-and-softskills__skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+
+.hobbies-and-softskills__hobbies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}

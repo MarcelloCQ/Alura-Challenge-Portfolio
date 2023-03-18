@@ -1,0 +1,11 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.title__profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}

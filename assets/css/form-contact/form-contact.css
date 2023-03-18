@@ -1,0 +1,28 @@
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 1em;
+}
+
+.form-contact__minicontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 5px;
+}
+
+.form-control__input {
+  width: 90%;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.btn-submit {
+  margin-top: 15px;
+  width: 50%;
+  
+}

@@ -1,0 +1,32 @@
+
+
+@media screen and (min-width: 360px){
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+  }
+
+  h1 {
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .header__name{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .header__mail{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+  }
+}
+
+
+
+@media screen and (min-width: 768px){
+
+}

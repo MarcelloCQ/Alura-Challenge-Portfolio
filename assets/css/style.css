@@ -1,10 +1,10 @@
-body
-header
-titulo
-menu
-about-me
-hobbies-and-softskills
-studies
-experiencie
-form-contact
-rodapie
+@import url('./body/body.css');
+@import url('./header/header.css');
+@import url('./title/title.css');
+@import url('./menu/menu.css');
+@import url('./about-me/about-me.css');
+@import url('./hobbies-and-softskills/hobbies-and-softskills.css');
+@import url('./studies/studies.css');
+@import url('./experiencie/experiencie.css');
+@import url('./form-contact/form-contact.css');
+@import url('./rodapie/rodapie.css');
