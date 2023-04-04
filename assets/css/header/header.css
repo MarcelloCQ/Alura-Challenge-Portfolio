@@ -1,32 +1,123 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 60px;
+}
 
+.container-header-name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5em;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header__name{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: #464646;
+  margin: 0;
+}
+.header__mail{
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  font-family: 'Raleway', sans-serif;
+  color: #464646;
+  margin: 0;
+}
 
 @media screen and (min-width: 360px){
   .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: .5em;
+    padding: 0 15px 0 15px;
     align-items: center;
-    padding: 0 30px 0 30px;
   }
 
-  h1 {
-    font-size: 15px;
-    font-weight: 100;
-  }
-
-  .header__name{
-    font-size: 15px;
-    font-weight: 700;
-  }
   .header__mail{
-    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
     align-items: center;
-    gap: 0.2em;
   }
 }
 
+@media screen and (max-width: 360px){
+  .header__container__menu {
+    display: none;
+  }
 
+  .container-header-name {
+    flex-wrap: nowrap;
+  }
+  .header {
+    gap: .5em;
+    padding: 0 15px 0 15px;
+    align-items: center;
+  }
+
+  .header__mail{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 768px){
+  .header__container__menu {
+    display: none;
+  }
 
+  .header {
+    gap: .5em;
+    padding: 0 15px 0 15px;
+    align-items: center;
+  }
+
+  .header__mail{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .container-header-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+  }
+  .header__container__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 2em;
+  }
+
+  .header {
+    gap: .5em;
+    padding: 0 15px 0 15px;
+    align-items: center;
+  }
+
+  .header__mail{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+  }
 }

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World!</title>
   <script src="./node_modules/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/normalize.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -14,13 +15,27 @@
 <body class="body">
   <main>
     <header class="header">
-      <h1 class="header__name">Marcello Crescimbeni</h1>
-      <h1 class="header__mail"><i data-feather="mail"></i>giosuemc@gmail.com</h1>
+      <div class="container-header-name">
+        <i data-feather="code"></i>
+        <p class="header__name"> Marcello Crescimbeni</p>
+      </div>
+      <div class="header__container__menu">
+        <a href="#about-me">Sobre Mi</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#studies">Estudios</a>
+        <a href="#experience">Proyectos</a>
+      </div>
+      <p class="header__mail"><i data-feather="mail"></i>giosuemc@gmail.com</p>
     </header>
     <section class="title">
-      <img class="title__profile-photo" src="./assets/img/profile-photo/1517532357696.jpg" alt="Foto de Perfil">
-      <p>Hola, mi nombre es Marcello Crescimbeni, desarrollador frontEnd</p>
-      <p>Me especializo en el desarrollo de aplicaciones web</p>
+      <div>
+        <img class="title__profile-photo" src="./assets/img/profile-photo/1517532357696.jpg" alt="Foto de Perfil">
+      </div>
+      <div>
+        <h1>Hola, mi nombre es Marcello Crescimbeni, desarrollador frontEnd</h1>
+        <p>Me especializo en el desarrollo de aplicaciones web</p>
+      </div>
     </section>
     <section class="menu">
       <div class="menu__anchor__container">
@@ -36,45 +51,107 @@
         <a class="menu__anchor" href="https://drive.google.com/file/d/1v1uF8j-9XG9C-ElOGZnAVk5zTi45XBxZ/view?usp=share_link" target="_blank" >Curriculum</a>
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <h1>Sobre mi</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, harum. Aspernatur fugiat architecto dignissimos molestias facilis illum neque? Quasi accusamus placeat beatae id enim praesentium similique quo aperiam iste neque!</p>
     </section>
     <section class="hobbies-and-softskills">
       <h1 class="hobbies-and-softskills__title">Skills</h1>
-      <div class="hobbies-and-softskills__container">
-        <div class="hobbies-and-softskills__skills">JavaScript</div>
-        <div class="hobbies-and-softskills__skills">NodeJS</div>
-        <div class="hobbies-and-softskills__skills">React</div>
-        <div class="hobbies-and-softskills__skills">Redux</div>
-        <div class="hobbies-and-softskills__skills">Jest</div>
-        <div class="hobbies-and-softskills__skills">CSS</div>
+      <div class="hobbies-and-softskills__container" id="skills">
+        <div class="hobbies-and-softskills__skills">
+          JavaScript
+          <img width="100px" height="100px" src="./assets/img/iconos/JS/icons8-javascript-240.png" alt="Icono de JavaScript" />
+        </div>
+        <div class="hobbies-and-softskills__skills">
+          NodeJS
+          <img width="100px" height="100px" src="./assets/img/iconos/NodeJS/icons8-node-js-240.png" alt="Icono de NodeJS" />
+        </div>
+        <div class="hobbies-and-softskills__skills">
+          React
+          <img width="100px" height="100px" src="./assets/img/iconos/React/icons8-reaccionar-nativo-480.png" alt="Icono de ReactJS" />
+        </div>
+        <div class="hobbies-and-softskills__skills">
+          Redux
+          <img width="100px" height="100px" src="./assets/img/iconos/Redux/icons8-redux-480.png" alt="Icono de Redux" />
+        </div>
+        <div class="hobbies-and-softskills__skills">
+          Jest
+          <img width="100px" height="100px" src="./assets/img/iconos/Jest/icons8-jest-can-collect-code-coverage-information-from-entire-projects-100.png" alt="Icono de Jest" />
+        </div>
+        <div class="hobbies-and-softskills__skills">
+          CSS
+          <img width="100px" height="100px" src="./assets/img/iconos/CSS/icons8-css3-240.png" alt="Icono de CSS" />
+        </div>
       </div>
       <h1 class="hobbies-and-softskills__title">Hobbies</h1>
-      <div class="hobbies-and-softskills__container">
-        <div class="hobbies-and-softskills__hobbies">Tocar guitarra</div>
-        <div class="hobbies-and-softskills__hobbies">Ver anime</div>
-        <div class="hobbies-and-softskills__hobbies">Cantar</div>
-        <div class="hobbies-and-softskills__hobbies">Leer</div>
-        <div class="hobbies-and-softskills__hobbies">Nadar</div>
-        <div class="hobbies-and-softskills__hobbies">Salir a correr</div>
+      <div class="hobbies-and-softskills__container" id="hobbies">
+        <div class="hobbies-and-softskills__hobbies">
+          Tocar guitarra
+          <img width="100px" height="100px" src="./assets/img/iconos/Guitarra/icons8-música-rock-96.png" alt="Guitarra Electrica" />
+        </div>
+        <div class="hobbies-and-softskills__hobbies">
+          Ver anime
+          <img width="100px" height="100px" src="./assets/img/iconos/Anime/icons8-satoru-gojo-96.png" alt="Cara de Satoru Gojo" />
+        </div>
+        <div class="hobbies-and-softskills__hobbies">
+          Cantar
+          <img width="100px" height="100px" src="./assets/img/iconos/Cantar/icons8-micrófono-100.png" alt="Microfono" />
+        </div>
+        <div class="hobbies-and-softskills__hobbies">
+          Leer
+          <img width="100px" height="100px" src="./assets/img/iconos/Leer/icons8-literatura-100.png" alt="Icono de un libro" />
+        </div>
+        <div class="hobbies-and-softskills__hobbies">
+          Nadar
+          <img width="100px" height="100px" src="./assets/img/iconos/Nadar/icons8-gorra-de-natación-100.png" alt="Icono de una gorra y lentes para nadar" />
+        </div>
+        <div class="hobbies-and-softskills__hobbies">
+          Salir a correr
+          <img width="100px" height="100px" src="./assets/img/iconos/Correr/icons8-start-skin-type-2-96.png" alt="Icono de una persona corriendo" />
+        </div>
       </div>
     </section>
-    <section class="studies">
+    <section class="studies" id="studies">
       <h1 class="studies__title">Formación académica</h1>
       <div class="studies__container">
-        <img class="studies__instituto-photo" src="./assets/img/estudios/instituto-superior-tecnologico-argentino.png" alt="instituto-superior-tecnologico-argentino" />
-        <p class="studies__career">Computación e Informática</p>
+        <div class="studies__container__img">
+          <img class="studies__instituto-photo" src="./assets/img/estudios/instituto-superior-tecnologico-argentino.png" alt="Logo de instituto superior tecnologico Argentina" />
+        </div>
+        <h2 class="studies__career">Computación e Informática</h2>
         <p class="studies__instituto">2022 - Instituto Nacional Superior Tecnológico Argentina</p>
       </div>
       <div class="studies__container">
-        <img class="studies__instituto-photo" src="./assets/img/estudios/alura.png" alt="Alura Latam" />
-        <p class="studies__career">frontEnd Developer</p>
+        <div class="studies__container__img">
+          <img class="studies__instituto-photo" src="./assets/img/estudios/alura.png" alt="Logo de Alura Latam" />
+        </div>
+        <h2 class="studies__career">FullStack Web Developer Enfocado en Fron-End / JS / ReactJS / NodeJS</h2>
         <p class="studies__instituto">2022 - Alura Latam - Oracle</p>
       </div>
+      <div class="studies__container">
+        <div class="studies__container__img">
+          <img class="studies__instituto-photo" src="./assets/img/estudios/PR Image - Globant University (3).jpg" alt="Logo de Globant University" />
+        </div>
+        <h2 class="studies__career">QA / QC + Automation con JAVA</h2>
+        <p class="studies__instituto">2023 - Globant University - Globant</p>
+      </div>
     </section>
-    <section class="experiencie">
-      Pendiente insertar proyectos del reto alura
+    <section class="experiencie" id="experience">
+      <h1>Experiencia Profesional</h1>
+      <div class="experiencie__container">
+        <div class="experiencie__container__img">
+          <img class="experiencie__photo" src="./assets/img/portfolio/Encriptador.JPG" alt="Imagen de encriptador de texto" />
+        </div>
+        <h2>Encriptador de Texto</h2>
+        <p>Challenge Oracle</p>
+        <div class="button-container">
+          <a href="https://github.com/MarcelloCQ/Alura-Challenge-Portfolio" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-outline-primary">Repositorio</button>
+          </a>
+          <a href="https://marcellocq.github.io/EncriptadorDeTexto/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-primary">Ver Demo</button>
+          </a>
+        </div>
+      </div>
     </section>
     <section class="form-contact">
       <h1>Contacto</h1>
@@ -83,21 +160,21 @@ Complete el siguiente formulario  y me pondré en contacto con usted lo antes po
       <form class="form-contact__container">
         <div class="form-contact__minicontainer">
           <label for="#nombre">Nombre</label>
-          <input class="form-control__input" id="nombre" type="text" />
+          <input class="form-control__input form-control" id="nombre" type="text" />
         </div>
         <div class="form-contact__minicontainer">
           <label for="#email">Email</label>
-          <input class="form-control__input" id="email" type="email" />
+          <input class="form-control__input form-control" id="email" type="email" />
         </div>
         <div class="form-contact__minicontainer">
           <label for="#asunto">Asunto</label>
-          <input class="form-control__input" id="asunto" type="text" />
+          <input class="form-control__input form-control" id="asunto" type="text" />
         </div>
         <div class="form-contact__minicontainer">
           <label for="#mensaje">Mensaje</label>
-          <textarea class="form-control__input textarea" id="mensaje"></textarea>
+          <textarea class="form-control__input textarea form-control" id="mensaje"></textarea>
         </div>
-        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        <button type="submit" class="btn-submit btn btn-primary">Enviar Mensaje</button>
       </form>
     </section>
   </main>
